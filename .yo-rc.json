@@ -1,0 +1,25 @@
+{
+  "generator-phovea": {
+    "sextensions": [
+      {
+        "type": "namespace",
+        "id": "hello_world",
+        "module": "hello_world",
+        "extras": {
+          "namespace": "/api/hello_world"
+        }
+      }
+    ],
+    "type": "slib",
+    "modules": [],
+    "libraries": [],
+    "unknown": {
+      "requirements": [],
+      "dockerPackages": []
+    },
+    "name": "pathfinder_graph_reactome",
+    "author": "Samuel Gratzl",
+    "today": "Wed, 28 Jun 2017 08:39:30 GMT",
+    "githubAccount": "Caleydo"
+  }
+}

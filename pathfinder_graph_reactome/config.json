@@ -1,0 +1,52 @@
+{
+  "host": "neo4j_reactome",
+  "node_label": "Pathway",
+  "node_id": "stId",
+  "set_label": "Species",
+  "directions": {
+    "hasEvent": "out"
+  },
+  "directions_neighbor": {
+    "hasEvent": "out"
+  },
+  "inline": null,
+  "client": {
+    "sample_query": {
+    },
+    "search": {
+      "label": "Pathway",
+      "name": "displayName",
+      "id": "stId"
+    },
+    "settings": {
+    },
+    "nodes": [
+      {
+        "name": "Pathway",
+        "node_label": "Pathway",
+        "properties": {
+          "id": "id",
+          "displayName": "name",
+          "releaseDate": "name",
+          "stId": "name",
+          "speciesName": "name",
+          "isInDisease": "name",
+          "isInferred": "name",
+          "dbId": "name",
+          "doi": "name"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "label": "hasEvent",
+        "properties": {
+          "stoichiometry": "numerical",
+          "order": "numerical"
+        }
+      }
+    ],
+    "sets": [
+    ]
+  }
+}

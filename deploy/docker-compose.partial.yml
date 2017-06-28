@@ -1,0 +1,14 @@
+version: '2.0'
+_host:
+    depends_on:
+      - db_neo4j_reactome
+    links:
+      - 'db_neo4j_reactome:neo4j_reactome'
+  db_neo4j_reactome:
+    image: 922145058410.dkr.ecr.eu-central-1.amazonaws.com/phovea/neo4j:latest
+    volumes:
+    - db_neo4j_reactome:/data
+    environment:
+    - NEO4J_AUTH=none
+volumes:
+  db_neo4j_reactome:
