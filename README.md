@@ -1,7 +1,17 @@
 pathfinder_graph_reactome [![Phovea][phovea-image]][phovea-url] [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 =====================
 
+Preparation
+-----------
 
+1. Download http://reactome.org/download/current/reactome.graphdb.tgz
+1. Extract to directory
+1. rename `reactome.graph.db` to `graph.db` and nest it within a `databases` directory
+1. tar.gz it again to `db_neo4j_reactome.tar.gz` such that it contains `databases/graph.db/...`
+1. move it `_backup`
+1. run `./docker-backup restore` to restore the db snapshot
+1. start Pathfinder as usual
+1. open: http://localhost:8080/main.html?uc=reactome
 
 Installation
 ------------
